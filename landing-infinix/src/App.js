@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import { useEffect, useState } from 'react';
 import BounceLoader from "react-spinners/BounceLoader";
 import Icon from "./Assets/images/icon.png";
+import Estatua2 from "./Assets/images/estatua2.svg";
 
 const override = {
   display: "flex",

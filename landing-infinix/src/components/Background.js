@@ -2,7 +2,6 @@ import React from "react";
 import "../Assets/css/style.css"; 
 import bgMain from "../Assets/images/bgMain.png";
 import bgSolution from "../Assets/images/bgSolution.png";
-import bgCreate from "../Assets/images/bgCreate.png";
 
 class Background extends React.Component{
     render(){

@@ -296,11 +296,30 @@ span{
 .Composition img{
     position: absolute;
 }
+.estatua2{
+    position: relative;
+    width: 170% !important;
+    top: 65%;
+    left: -260%;
+    animation: float 6s ease-in-out infinite;
+}
+
 .estatua{
-    
     width: 54% !important;
     top: -2%;
     left: 49%;
+    animation: float 6s ease-in-out infinite;
+}
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }
 .fondo{
     width: 45% !important;
@@ -353,10 +372,18 @@ span{
     line-height: 20px;
     color: #575e8978;
 }
+.estat{
+    width: 100%;
+    height: auto;
+}
 @media screen  and (max-width: 1179px){
 
     .Tiutlo{
         width: 23%;
+    }
+    .estatua2{
+        top: 83%;
+        left: 0%;
     }
 }
 @media all and (max-width: 824px){
@@ -375,7 +402,7 @@ span{
         display: none;
     }
     .Titulo {
-        width: 33% !important;
+        width: 36% !important;
     }
     .Titulo h1{
         margin-top: 0px;
@@ -439,6 +466,9 @@ span{
     background: rgba(255, 255, 255, 0.2);
     border: 4px solid rgba(255, 255, 255, 0.33);
     filter: drop-shadow(0px 0px 30px rgba(47, 47, 47, 0.22));
+}
+.Solutions_card:hover{
+    background: rgba(59, 59, 59, 0.2);
 }
 .Solutions_card h3{
     text-align: left !important;
@@ -625,7 +655,9 @@ span{
     border: 4px solid rgba(255, 255, 255, 0.33);
     filter: drop-shadow(0px 0px 30px rgba(47, 47, 47, 0.22));
 }
-
+.CardRes:hover{
+    background: rgba(59, 59, 59, 0.2);
+}
 .CardRes_title{
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
@@ -904,6 +936,7 @@ span{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .copy span{

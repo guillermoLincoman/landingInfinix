@@ -1,5 +1,6 @@
 import React from "react";
 import "../Assets/css/style.css"; 
+import footer from "../Assets/images/footer.svg";
 
 class Footer extends React.Component{
     render(){
@@ -26,6 +27,7 @@ class Footer extends React.Component{
                 </div>
                 <div className="copy">
                     <h3 className="textLight"> Copyright 2022 <span className="textBold">InfinixSocial</span></h3>
+                    <img src={footer}></img>
                 </div>
             </div>   
         )
