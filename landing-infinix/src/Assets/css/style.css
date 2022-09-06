@@ -115,6 +115,11 @@ span{
     top: 1800px;
     height: 890px !important;
 }
+.bgCreate1{
+    position: absolute;
+    top: 1286px;
+    height: 890px !important;
+}
 .bgCreate2{
     position: absolute;
     top: 2232px;
@@ -804,13 +809,14 @@ span{
 }
 @media all and (max-width: 1348px){
     .Speak_background{
-        top:2850px;
+        top:3020px;
     }
 }
 
 @media all and (max-width: 1275px){
+
     .Speak_background{
-        top:3186px;
+    top:3682px;
     }
     .Speak{
         margin-top: 350px;/*Provisorio*/
@@ -821,35 +827,28 @@ span{
 }
 
 @media all and (max-width: 1014px){
-    .Speak_background{
-        top:3292px;
-    }
 
 }
 @media all and (max-width: 836px){
     .Speak_background{
-        top:4800px;
-    }
+        top:4750px;
+        }
 }
 @media all and (max-width: 824px){
-    .Speak_background{
-        top:4154px;
-    }
+
     .Speak_title h1{
         font-size: 50px;
     }
 }
 @media all and (max-width: 686px){
-    .Speak_background{
-        top:4200px;
-    }
+
     .bgSolution3 {
         top: 3827px;
     }
 }
 @media all and (max-width: 665px){
     .Speak_background{
-        top:4850px;
+        display: none;
     }
 }
 /*Footer*/

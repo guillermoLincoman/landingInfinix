@@ -1,8 +1,8 @@
 import React from "react";
 import "../Assets/css/style.css"; 
 import bgMain from "../Assets/images/bgMain.png";
-import bgSolution from "../Assets/images/solution.svg";
-import bgCreate from "../Assets/images/create.svg";
+import bgSolution from "../Assets/images/bgSolution.png";
+import bgCreate from "../Assets/images/bgCreate.png";
 
 class Background extends React.Component{
     render(){
@@ -29,6 +29,10 @@ class Background extends React.Component{
                     }}>
                 </div>
                 <div className="bgSolution3" style={{
+                    backgroundImage: `url("${bgSolution}")`
+                    }}>
+                </div>
+                <div className="bgCreate1" style={{
                     backgroundImage: `url("${bgSolution}")`
                     }}>
                 </div>
