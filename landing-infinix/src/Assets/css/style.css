@@ -13,7 +13,9 @@ li{
     font-size: 15.8;
     margin: 0px 0px 0 25px;
 }
-
+link{
+    display:initial ;
+}
 ul{
     display: flex;
 }
@@ -79,8 +81,10 @@ span{
     flex-direction: column;
 }
 .contain_Background div{
-    min-width: 1200px;
-    min-height: 1000px;
+    width: 1720px;
+    height: 1420px;
+    background-size: contain;
+    mix-blend-mode: darken;
 }
 .background{
     position: relative;
@@ -89,19 +93,33 @@ span{
     mix-blend-mode: darken;
 }
 .bgMain{
-    position: relative;
-    margin-top: -310px;
+    position: absolute;
+    top: -300px;
+    right: -600px;
 }
-.bgMain img{
-    position: relative;
 
-}
 .bgSolution{
-    position: relative;
+    position: absolute;
     margin-top: -10px;
+    width: 2762px !important;
+    top: 530px;
+}
+.bgSolution2{
+    position: absolute;
+    margin-top: -10px;
+    width: 2762px !important;
+    top: 2762px;
 }
 .bgCreate{
-    position: relative;
+    position: absolute;
+    top: 1800px;
+    height: 890px !important;
+}
+.bgCreate2{
+    position: absolute;
+    top: 2232px;
+    width: 1774px !important;
+    height: 842px !important;
 }
 .dis{
     display: none;
@@ -115,6 +133,24 @@ span{
 @media all and (max-width: 824px){
     .dis{
         display: block;
+    }
+    .bgMain{
+        position: absolute;
+        top: -300px;
+        right: -1000px;
+    }
+    .bgSolution2{
+        transform: rotate(90deg);
+    }
+    .bgSolution3{
+        position: absolute;
+        margin-top: -10px;
+        width: 2762px !important;
+        top: 3200px;
+        transform: rotate(90deg);
+    }
+    .bgSolution{
+        top: 400px;
     }
 }
 
@@ -233,13 +269,13 @@ span{
 }
 
 .Titulo{
-    width: 22%;
+    width: 33%;
 }
 
 .Titulo h1{
-    margin-top: 120px;
+    margin-top: 30px;
     color: rgb(255, 255, 255);
-    font-size: 113px;
+    font-size: 95px;
 }
 
 .Composition{
@@ -334,7 +370,7 @@ span{
         display: none;
     }
     .Titulo {
-        width: 55% !important;
+        width: 33% !important;
     }
     .Titulo h1{
         margin-top: 0px;
@@ -397,7 +433,7 @@ span{
     border-radius: 46.97px;
     background: rgba(255, 255, 255, 0.2);
     border: 4px solid rgba(255, 255, 255, 0.33);
-     filter: drop-shadow(-10px 24.92px 65.88px rgba(0, 0, 0, 0.27));
+    filter: drop-shadow(0px 0px 30px rgba(47, 47, 47, 0.22));
 }
 .Solutions_card h3{
     text-align: left !important;
@@ -582,7 +618,7 @@ span{
     border-radius: 46.97px;
     background: rgba(255, 255, 255, 0.2);
     border: 4px solid rgba(255, 255, 255, 0.33);
-     filter: drop-shadow(-10px 24.92px 65.88px rgba(0, 0, 0, 0.27));
+    filter: drop-shadow(0px 0px 30px rgba(47, 47, 47, 0.22));
 }
 
 .CardRes_title{
@@ -717,6 +753,13 @@ span{
     display: flex;
     flex-direction: column;
 }
+.click {
+    display: flex;
+    padding-left: 3px;
+}
+.Speak_title :hover{
+    color:rgb(255, 131, 15);
+}
 .Speak_title h1{
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
@@ -737,11 +780,12 @@ span{
      
 .Speak_background{
     display: flex;
-    position: relative;
+    position: absolute;
     text-align: center;
     flex-direction: column;
     align-items:center;
-    top: -600px;
+    top: 2400px;
+    mix-blend-mode: normal !important;
 }
 .Speak_background svg{
     height: 1637px;
@@ -753,26 +797,34 @@ span{
     fill: white;
     /*    filter: drop-shadow(-18px 35px 40px rgb(0 0 0 / 0.2));*/
 }
-
+.bgSolution3 {
+    top: 3827px;
+    position: absolute;
+    display: none;
+}
 @media all and (max-width: 1348px){
     .Speak_background{
-        top:3150px;
+        top:2850px;
     }
 }
 
 @media all and (max-width: 1275px){
     .Speak_background{
-        top:3750px;
+        top:3186px;
     }
     .Speak{
         margin-top: 350px;/*Provisorio*/
+    }
+    .bgSolution3 {
+        display: block;
     }
 }
 
 @media all and (max-width: 1014px){
     .Speak_background{
-        top:3950px;
+        top:3292px;
     }
+
 }
 @media all and (max-width: 836px){
     .Speak_background{
@@ -781,7 +833,7 @@ span{
 }
 @media all and (max-width: 824px){
     .Speak_background{
-        top:4400px;
+        top:4154px;
     }
     .Speak_title h1{
         font-size: 50px;
@@ -789,7 +841,10 @@ span{
 }
 @media all and (max-width: 686px){
     .Speak_background{
-        top:4550px;
+        top:4200px;
+    }
+    .bgSolution3 {
+        top: 3827px;
     }
 }
 @media all and (max-width: 665px){
@@ -890,8 +945,16 @@ span{
     margin: auto;
     position: absolute;
     margin-top: 11px;
-
+    animation: App-logo-spin infinite 1s linear;
 }
+@keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 .copy h3{
     color: #575E89;
     font-size: 18px;
@@ -927,10 +990,23 @@ span{
         font-size: 14px;
     }
     .iconLoading{
-        width: 20%;
+        width: 15%;
         margin: auto;
         position: absolute;
         margin-top: 11px;
-    
     }
 }
+
+/*Scroll*/
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 131, 15);;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+  }

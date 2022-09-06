@@ -29,7 +29,7 @@ class Main extends React.Component{
                 </div>
                 <div className="Titulo">
                     <h1>SOCIAL+<br/>MKTNG+<br/>CODE</h1>
-                    <h3>Empower your brand<span> with powerfull a</span><br/>Social / Media Partner</h3>
+                    <h3>Want new results?<span> keep scrolling</span><br/>we got a solution for you</h3>
                 <div className='button'></div>
                 </div>
 

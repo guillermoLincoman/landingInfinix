@@ -10,7 +10,7 @@ import Partners from './components/Partners';
 import Speak from './components/Speak';
 import Footer from './components/Footer';
 import { useEffect, useState } from 'react';
-import ClipLoader from "react-spinners/ClipLoader";
+import BounceLoader from "react-spinners/BounceLoader";
 import Icon from "./Assets/images/icon.png";
 
 const override = {
@@ -28,14 +28,14 @@ function App() {
     setLoading(true);
     setTimeout(()=>{
       setLoading(false)
-    },4000)
+    },5000)
   },[])
   return (
     <div className="App">
       {loading ?(
         <div className='load'>
           <img className="iconLoading" src={Icon}/>
-          <ClipLoader loading={loading} cssOverride={override}  size={150} />
+          <BounceLoader loading={loading} cssOverride={override}  size={150} />
         </div>
         ) : (
         <header className="App-header">
@@ -44,7 +44,6 @@ function App() {
           <Main/>
           <Solutions/>
           <Create/>
-          <Partners/>
           <Speak/>
           <Footer/>
         </header>

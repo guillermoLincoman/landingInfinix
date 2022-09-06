@@ -1,9 +1,9 @@
 import React from "react";
 import "../Assets/css/style.css"; 
 import Card from '../components/Card';
-import Ads from "../Assets/images/ads.svg";
-import Social from "../Assets/images/social.svg";
-import Web from "../Assets/images/web.svg";
+import Ads from "../Assets/images/ads.png";
+import Social from "../Assets/images/social.png";
+import Web from "../Assets/images/web.png";
 
 class Solutions extends React.Component{
     render(){
@@ -12,7 +12,7 @@ class Solutions extends React.Component{
             <div className="Solutions">
                 <div className="Solutions_title">
                     <h1>SOLUTIONS</h1>
-                    <h3> We are a team of professionals dedicated<br/>to create<span className="textBold"> your notable presence.</span></h3>
+                    <h3><span className="textBold"> We’re a huge creative mind.<br/> We’re all dedicated to take your brand </span><br/> to the next level.</h3>
                 </div>
                 <div className="Solutions_cards">
                     <Card   title="Ads 👨‍💻" 

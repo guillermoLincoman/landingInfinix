@@ -12,7 +12,7 @@ class Create extends React.Component{
             <div className="Create">
                 <div className="Create_title">
                     <h1>HOW WE CREATE<br/> MASTERPIECES</h1>
-                    <h3 className="textLight"> <span className="textBold"> Step by step</span>, from nowhere to<span className="textBold"> Inifinix</span></h3>
+                    <h3 className="textLight"> <span className="textBold"> Step by step</span>, from scratch to<span className="textBold"> Inifinix</span></h3>
                     <img className="line" src={Line}></img>
                     <img className="line1" src={Line1}></img>
                     <img className="line2" src={Line2}></img>
