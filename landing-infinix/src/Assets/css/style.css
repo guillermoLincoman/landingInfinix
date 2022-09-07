@@ -936,8 +936,9 @@ span{
 .copy{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
+    gap: 50px;
 }
 
 .copy span{
