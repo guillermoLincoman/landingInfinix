@@ -941,9 +941,13 @@ span{
 .copy{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: column;
+<<<<<<< HEAD
     gap: 10px;
+=======
+    gap: 50px;
+>>>>>>> b9882974d5055080a2828434403289d20049319c
 }
 
 .copy span{
