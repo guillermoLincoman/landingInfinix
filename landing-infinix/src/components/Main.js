@@ -8,18 +8,22 @@ import Circulo from "../Assets/images/Subtract.svg";
 import Marmol4 from "../Assets/images/Rectangle4.svg";
 import Fondo from "../Assets/images/fondo.svg";
 import Star from "../Assets/images/Star.svg";
-import Bounce  from 'react-reveal/Bounce';
+import Fade from 'react-reveal/Fade';
+import Zoom from 'react-reveal/Zoom';
 
 class Main extends React.Component{
     render(){
         return(
             
             <div className="Main">
+                <Fade right cascade>
                 <div className="Service">
                     <div className="containService"> 
                         <h2>DESIGN AND SOCIAL COM<img className="star" src={Star}></img>DIGITAL MARKETING<img className="star" src={Star}></img>SOCIAL MEDIA<img className="star" src={Star}></img>WEB DEVELOPMENT</h2>
                     </div>
                 </div>
+                </Fade>
+                <Zoom right cascade>
                 <div className="Composition">
                     <img className="fondo" src={Fondo}></img>
                     <img className="marmol4 images2 App-logo" src={Marmol4}></img>
@@ -29,13 +33,14 @@ class Main extends React.Component{
                     <img className="marmol1 images2 App-logo" src={Marmol1}></img>
                     <img className="estatua images " src={Estatua}></img>
                 </div>
-                <Bounce  cascade>
+                </Zoom>
+                <Fade right cascade>
                 <div className="Titulo">
                     <h1>SOCIAL+<br/>MKTNG+<br/>CODE </h1>
                     <h3>Want new results?<span> keep scrolling</span><br/>we got a solution for you</h3>
                     <div className='button'></div>
                 </div>
-                </Bounce >
+                </Fade >
             </div>            
         )
     }

@@ -2,9 +2,9 @@ import React from "react";
 import "../Assets/css/style.css"; 
 import Card from '../components/Card';
 import Ads from "../Assets/images/ads.png";
-import Social from "../Assets/images/social.webp";
+import Social from "../Assets/images/social.png";
 import Web from "../Assets/images/web.png";
-import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 class Solutions extends React.Component{
     render(){
@@ -15,7 +15,7 @@ class Solutions extends React.Component{
                     <h1>SOLUTIONS</h1>
                     <h3><span className="textBold"> We’re a huge creative mind.<br/> We’re all dedicated to take your brand </span><br/> to the next level.</h3>
                 </div>
-                <Zoom>
+                <Fade right >
                 <div className="Solutions_cards">
                     <Card   title="Ads 👨‍💻" 
                             imagen={Ads} 
@@ -33,7 +33,7 @@ class Solutions extends React.Component{
                             Our developers love challenges, what’s on your mind?  🚀"
                     />
                 </div>  
-                </Zoom>   
+                </Fade>   
             </div>    
    
         )

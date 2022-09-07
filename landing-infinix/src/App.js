@@ -10,15 +10,15 @@ import Partners from './components/Partners';
 import Speak from './components/Speak';
 import Footer from './components/Footer';
 import { useEffect, useState } from 'react';
-import BounceLoader from "react-spinners/BounceLoader";
+import BarLoader  from "react-spinners/BarLoader";
 import Icon from "./Assets/images/icon.png";
-import Estatua2 from "./Assets/images/estatua2.svg";
 
 const override = {
   display: "flex",
   alingItem: "center",
   margin: "20% auto",
-  borderColor: "grey",
+  borderColor: "#ed1651",
+  top: "200px",
 };
 
 
@@ -36,7 +36,7 @@ function App() {
       {loading ?(
         <div className='load'>
           <img className="iconLoading" src={Icon}/>
-          <BounceLoader loading={loading} cssOverride={override}  size={150} />
+          <BarLoader  loading={loading} cssOverride={override}  size={150} />
         </div>
         ) : (
         <header className="App-header">
@@ -54,3 +54,5 @@ function App() {
 }
 
 export default App;
+/*          <Roll left ><Background/></Roll>
+ */

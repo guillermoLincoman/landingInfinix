@@ -112,9 +112,11 @@ span{
 }
 .bgCreate{
     position: absolute;
-    top: 1800px;
-    height: 890px !important;
+    top: 1647px;
+    width: 2713px !important;
+    height: 2010px !important;
 }
+
 .bgCreate1{
     position: absolute;
     top: 1286px;
@@ -122,17 +124,12 @@ span{
 }
 .bgCreate2{
     position: absolute;
-    top: 2232px;
+    top: 2302px;
     width: 1774px !important;
     height: 842px !important;
 }
 .dis{
     display: none;
-}
-
-
-@media all and (max-width: 1275px){
-
 }
 
 @media all and (max-width: 824px){
@@ -156,6 +153,11 @@ span{
     }
     .bgSolution{
         top: 400px;
+    }
+    .bgCreate{
+
+        width: 2220px !important;
+        height: 1900px !important;
     }
 }
 
@@ -296,19 +298,25 @@ span{
 .Composition img{
     position: absolute;
 }
-.estatua2{
-    position: relative;
-    width: 170% !important;
-    top: 65%;
-    left: -260%;
-    animation: float 6s ease-in-out infinite;
-}
-
 .estatua{
     width: 54% !important;
     top: -2%;
     left: 49%;
     animation: float 6s ease-in-out infinite;
+}
+.estatua2{
+    top: 73%;
+    left: 0%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    animation: float2 6s ease-in-out infinite;
+}
+.estat{
+    position: relative;
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
 }
 @keyframes float {
 	0% {
@@ -316,6 +324,17 @@ span{
 	}
 	50% {
 		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+@keyframes float2 {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-100px);
 	}
 	100% {
 		transform: translatey(0px);
@@ -372,19 +391,15 @@ span{
     line-height: 20px;
     color: #575e8978;
 }
-.estat{
-    width: 100%;
-    height: auto;
-}
+
+
+
 @media screen  and (max-width: 1179px){
 
     .Tiutlo{
         width: 23%;
     }
-    .estatua2{
-        top: 83%;
-        left: 0%;
-    }
+
 }
 @media all and (max-width: 824px){
     .Main{
@@ -429,6 +444,7 @@ span{
     height: auto;
     gap: 60px;
     padding: 10rem 0 3rem 0;
+    margin-top: 200px;
 }
 
 .Solutions h3{
@@ -469,7 +485,7 @@ span{
     overflow: hidden;
 }
 .Solutions_card:hover{
-    background: rgba(59, 59, 59, 0.2);
+    background: rgb(197 197 197 / 20%);
 }
 .Solutions_card h3{
     text-align: left !important;
@@ -511,6 +527,9 @@ span{
     }
     .Solutions_title span {
         font-size: 16px;
+    }
+    .Solutions{
+        margin-top: 0px;
     }
 }
 /*CREATE*/
@@ -657,7 +676,7 @@ span{
     filter: drop-shadow(0px 0px 30px rgba(47, 47, 47, 0.22));
 }
 .CardRes:hover{
-    background: rgba(59, 59, 59, 0.2);
+    background: rgb(197 197 197 / 20%);
 }
 .CardRes_title{
     font-family: 'Plus Jakarta Sans';
@@ -782,14 +801,13 @@ span{
 /*SPEAK*/
 .Speak{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    width: 100%;
-    margin-top: 270px;
 }
 .Speak_title{
     display: flex;
     flex-direction: column;
+    margin-top: 250px;
 }
 .click {
     display: flex;
@@ -822,13 +840,14 @@ span{
     text-align: center;
     flex-direction: column;
     align-items:center;
-    top: 2400px;
     mix-blend-mode: normal !important;
+    z-index: -1;
 }
 .Speak_background svg{
     height: 1637px;
     position: absolute;
     transform: rotate(180deg);
+    top: -902px;
 }
 
 .Speak_background path{
@@ -841,19 +860,10 @@ span{
     display: none;
 }
 @media all and (max-width: 1348px){
-    .Speak_background{
-        top:3020px;
-    }
+
 }
 
 @media all and (max-width: 1275px){
-
-    .Speak_background{
-    top:3682px;
-    }
-    .Speak{
-        margin-top: 350px;/*Provisorio*/
-    }
     .bgSolution3 {
         display: block;
     }
@@ -863,9 +873,7 @@ span{
 
 }
 @media all and (max-width: 836px){
-    .Speak_background{
-        top:4750px;
-        }
+
 }
 @media all and (max-width: 824px){
 
@@ -880,9 +888,7 @@ span{
     }
 }
 @media all and (max-width: 665px){
-    .Speak_background{
-        display: none;
-    }
+
 }
 /*Footer*/
 .Footer{
@@ -893,7 +899,6 @@ span{
     gap: 78px;
     width: 100%;
     padding-top: 67px;
-    padding-bottom:48px;
     background-color: white;
     
     margin-top: 131px;
@@ -938,6 +943,7 @@ span{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 10px;
 }
 
 .copy span{
