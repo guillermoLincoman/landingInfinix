@@ -2,7 +2,7 @@ import React from "react";
 import "../Assets/css/style.css"; 
 import Card from '../components/Card';
 import Ads from "../Assets/images/ads.png";
-import Social from "../Assets/images/social.png";
+import Social from "../Assets/images/social.webp";
 import Web from "../Assets/images/web.png";
 import Zoom from 'react-reveal/Zoom';
 
