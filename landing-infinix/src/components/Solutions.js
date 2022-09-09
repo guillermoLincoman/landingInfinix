@@ -10,7 +10,7 @@ class Solutions extends React.Component{
     render(){
         return(
             
-            <div className="Solutions">
+            <div id="#Solutions" className="Solutions">
                 <div className="Solutions_title">
                     <h1>SOLUTIONS</h1>
                     <h3><span className="textBold"> We’re a huge creative mind.<br/> We’re all dedicated to take your brand </span><br/> to the next level.</h3>

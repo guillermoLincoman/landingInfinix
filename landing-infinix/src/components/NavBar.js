@@ -10,7 +10,7 @@ class NavBar extends React.Component{
                     <div className="NavBar-logo"></div>
                     <nav className="menu">
                         <button aria-expanded="false" aria-controls="menu-list">
-                            <a href="mailto:infinixSocial@infinixsm.shop"><FontAwesomeIcon icon={faUser} /></a>
+                            <a href="#Speak"><FontAwesomeIcon icon={faUser} /></a>
                         </button>
                         <div className="NavBar-list">
                             <ul className="menu-list">

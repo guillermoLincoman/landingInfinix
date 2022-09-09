@@ -1,5 +1,6 @@
 html{
     background-color: white;
+    scroll-behavior: smooth;
 }
 *,
 *:before,
@@ -56,6 +57,9 @@ span{
     font-size: 23px;
     line-height: 30.24px;
 }
+.icon{
+    width: 100%;
+}
 @media (max-width: 824px){
 
     h1{
@@ -94,8 +98,11 @@ span{
 }
 .bgMain{
     position: absolute;
-    top: -300px;
-    right: -600px;
+    top: -740px;
+    height: 2203px !important;
+    right: -1067px;
+    width: 2459px !important;
+    background-repeat: no-repeat;
 }
 
 .bgSolution{
@@ -136,11 +143,7 @@ span{
     .dis{
         display: block;
     }
-    .bgMain{
-        position: absolute;
-        top: -300px;
-        right: -1000px;
-    }
+
     .bgSolution2{
         transform: rotate(90deg);
     }
@@ -274,7 +277,10 @@ span{
     height: fit-content;
     /* padding: 1rem 0 1rem 0; */
 }
-
+.images{
+    width: 70px;
+    padding-top: 25px;
+}
 .Titulo{
     width: 33%;
 }
@@ -299,10 +305,10 @@ span{
     position: absolute;
 }
 .estatua{
-    width: 54% !important;
-    top: -2%;
-    left: 49%;
-    animation: float 6s ease-in-out infinite;
+    width: 64% !important;
+    top: -13%;
+    left: 53%;
+    animation: float 6s ease-in-out infinite !important;
 }
 .estatua2{
     top: 73%;
@@ -483,6 +489,7 @@ span{
     border: 4px solid rgba(255, 255, 255, 0.33);
     filter: drop-shadow(0px 0px 30px rgba(47, 47, 47, 0.22));
     overflow: hidden;
+    cursor: pointer;
 }
 .Solutions_card:hover{
     background: rgb(197 197 197 / 20%);
@@ -674,6 +681,7 @@ span{
     background: rgba(255, 255, 255, 0.2);
     border: 4px solid rgba(255, 255, 255, 0.33);
     filter: drop-shadow(0px 0px 30px rgba(47, 47, 47, 0.22));
+    cursor: pointer;
 }
 .CardRes:hover{
     background: rgb(197 197 197 / 20%);
@@ -984,16 +992,8 @@ span{
     margin: auto;
     position: absolute;
     margin-top: 11px;
-    animation: App-logo-spin infinite 1s linear;
 }
-@keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
+
 .copy h3{
     color: #575E89;
     font-size: 18px;

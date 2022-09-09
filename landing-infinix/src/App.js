@@ -6,7 +6,6 @@ import Background from './components/Background';
 import Main from './components/Main';
 import Solutions from './components/Solutions';
 import Create from './components/Create';
-import Partners from './components/Partners';
 import Speak from './components/Speak';
 import Footer from './components/Footer';
 import { useEffect, useState } from 'react';
@@ -18,17 +17,15 @@ const override = {
   alingItem: "center",
   margin: "20% auto",
   borderColor: "#ed1651",
-  top: "200px",
+  top: "60px",
 };
 
 
 function App() {
-  
   let [loading, setLoading] = useState(false);
   useEffect(()=>{
-    setLoading(true);
     setTimeout(()=>{
-      setLoading(false)
+      setLoading(false);
     },5000)
   },[])
   return (

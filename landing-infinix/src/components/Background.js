@@ -3,7 +3,6 @@ import "../Assets/css/style.css";
 import bgMain from "../Assets/images/bgMain.png";
 import bgSolution from "../Assets/images/bgSolution.png";
 import Roll from 'react-reveal/Roll';
-import Zoom from 'react-reveal/Zoom';
 
 class Background extends React.Component{
     render(){

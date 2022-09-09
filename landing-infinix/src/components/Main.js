@@ -10,6 +10,7 @@ import Fondo from "../Assets/images/fondo.svg";
 import Star from "../Assets/images/Star.svg";
 import Fade from 'react-reveal/Fade';
 import Zoom from 'react-reveal/Zoom';
+import BtnInicio from "../Assets/images/btnInicio.svg";
 
 class Main extends React.Component{
     render(){
@@ -38,7 +39,7 @@ class Main extends React.Component{
                 <div className="Titulo">
                     <h1>SOCIAL+<br/>MKTNG+<br/>CODE </h1>
                     <h3>Want new results?<span> keep scrolling</span><br/>we got a solution for you</h3>
-                    <div className='button'></div>
+                    <a href="#Solutions"><img className= "images" src={BtnInicio}></img></a>
                 </div>
                 </Fade >
             </div>            
