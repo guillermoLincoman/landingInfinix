@@ -20,10 +20,11 @@ const override = {
   top: "60px",
 };
 
-/*    setLoading(true); */
+/*     */
 function App() {
   let [loading, setLoading] = useState(false);
   useEffect(()=>{
+    setLoading(true);
     setTimeout(()=>{
       setLoading(false);
     },5000)

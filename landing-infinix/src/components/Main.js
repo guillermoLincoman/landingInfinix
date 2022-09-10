@@ -39,7 +39,6 @@ class Main extends React.Component{
                     <h1>SOCIAL+<br/>MKTNG+<br/>CODE </h1>
                     <div className="Subtitutlo">
                         <p className="subtitle">Want new results?<span className="bold"><br/>keep scrolling<br/></span>we got a solution for you</p>
-                        <a href="#Solutions"><img className= "images" src={BtnInicio}></img></a>
                     </div>
                  </div>
                 </Fade >
