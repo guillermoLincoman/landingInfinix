@@ -22,8 +22,8 @@ const override = {
 
 function App() {
   let [loading, setLoading] = useState(false);
-  setLoading(true); 
   useEffect(()=>{
+      setLoading(true); 
     setTimeout(()=>{
       setLoading(false);
     },5000)
