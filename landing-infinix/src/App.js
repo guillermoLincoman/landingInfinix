@@ -10,7 +10,7 @@ import Speak from './components/Speak';
 import Footer from './components/Footer';
 import { useEffect, useState } from 'react';
 import BarLoader  from "react-spinners/BarLoader";
-import Icon from "./Assets/images/icon.png";
+import Icon from "./Assets/images/logo.svg";
 
 const override = {
   display: "flex",

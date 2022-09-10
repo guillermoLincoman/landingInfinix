@@ -27,8 +27,8 @@ class Solutions extends React.Component{
                 <Fade bottom >
                     <Card   title="Apps 🤳" 
                             imagen={Apps} 
-                            text="Growing, selling, getting in touch, branding, or whatever your current objective is, 
-                            we have some ninjas to make it happen  🥷"
+                            text="Be ahead & always in touch with your audience.
+                            A new kind of engagement has arrived.🥷"
                     />
                 </Fade>   
                 <Fade left >
