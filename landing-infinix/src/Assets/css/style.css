@@ -7,11 +7,12 @@ html{
 *:after{
     box-sizing: inherits;
     margin: 0;
+    font-family: 'Plus Jakarta Sans';
 }
+
 li{
     list-style: none;
     margin: 10px 0px 0 20px;
-    font-size: 15.8;
     margin: 0px 0px 0 25px;
 }
 link{
@@ -20,13 +21,20 @@ link{
 ul{
     display: flex;
 }
+span .bold{
+    font-weight: 600;
+}
+.dark_text{
+    color: #575E89;
+}
+.white_text{
+    color: #ffffff;
+}
 a{
     color: #575E89;
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
     font-weight: 500;
-    font-size: 15.8px;
-    line-height: 20px;
     text-align: center;
     text-decoration: none;
     color: #575E89;
@@ -35,46 +43,64 @@ a{
 a:hover{
     color: rgb(255, 131, 15);
 }
-h3{
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 1000;
-    font-size: 23px;
-    line-height: 32px;
+p{
+    font-size: 1.2em;
 }
-h1{
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 81px;
-    line-height: 100.4%;
+.subtitle{
+    font-size:1.4em !important;
 }
 
-span{
-    font-family: 'Plus Jakarta Sans';
+h1{
+    font-style: normal;
+    font-weight: 800;
+    margin-bottom: 15px;
+    font-size: 5em;
+}
+h2{
+    margin-bottom: 15px !important;
+    font-size: 2.5em;
+}
+h3{
     font-style: normal;
     font-weight: 100;
-    font-size: 23px;
-    line-height: 30.24px;
+}
+h1,h2{
+    line-height: 1.2em !important;
+}
+span{
+    font-style: normal;
+    font-weight: 1000;
 }
 .icon{
     width: 100%;
 }
 @media (max-width: 824px){
-
     h1{
-        font-size: 55px;
+        font-size: 4em;
     }
-    h3{
-       font-size: 16px;
+    .Create_title h1 {
+        font-size: 2.7em;   
     }
-    span{
-        font-size: 16px;
+    p{
+        font-size: 1em !important;
     }
-        
+    .subtitle{
+        font-size: 1em !important;
+    }
+    .Footer_links span {
+        font-size: 1em;
+    }
+    a{
+        font-size: 0.8em;
+    }
+    .Footer_social{
+        justify-content: center !important;
+    }
+
 }
 
 /*Background*/
+
 .contain_Background{
     z-index: -1;
     height: -webkit-fill-available;
@@ -140,6 +166,11 @@ span{
 }
 
 @media all and (max-width: 824px){
+
+
+
+
+
     .dis{
         display: block;
     }
@@ -281,14 +312,10 @@ span{
     width: 70px;
     padding-top: 25px;
 }
-.Titulo{
-    width: 33%;
-}
+
 
 .Titulo h1{
-    margin-top: 30px;
     color: rgb(255, 255, 255);
-    font-size: 95px;
 }
 
 .Composition{
@@ -384,17 +411,15 @@ span{
     transform: rotate(90deg);
     width: 12%;
 }
+.pService{
+    font-size: 1em;
+}
 .containService{
     width: 809px;
     height: 138px;
     margin-top: -40px;
 }
 .containService h2{
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15.8px;
-    line-height: 20px;
     color: #575e8978;
 }
 
@@ -427,16 +452,10 @@ span{
     }
     .Titulo h1{
         margin-top: 0px;
-        font-size: 70px;
         position: relative;
     }
-    .Titulo h3{
-        font-size: 14px;
-        top: -36px;
 
-    }
     .Titulo span{
-        font-size: 14px;
     }
 }
 
@@ -450,7 +469,7 @@ span{
     height: auto;
     gap: 60px;
     padding: 10rem 0 3rem 0;
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
 .Solutions h3{
@@ -459,8 +478,6 @@ span{
 .Solutions h1{
     color: rgb(255, 255, 255);
     text-align: center;
-    margin: 30px;
-
 }
 
 /*CARD*/
@@ -474,6 +491,30 @@ span{
     justify-content: center;
 }
 .Solutions_card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    max-width: 19em;
+    min-width: 280px;
+    padding: 25px 25px 0 25px;
+    gap: 20px;
+    height: fit-content;
+
+    filter: drop-shadow(0px 0px 30px rgba(47, 47, 47, 0.22));/*sOMBRA*/
+    box-shadow: 0px 0px 30px rgba(47, 47, 47, 0.22);/*sOMBRA ADENTRO*/
+    border: 4px solid rgba(255, 255, 255, 0.33);/*BORDE*/
+    border-radius: 46.97px;
+}
+.Solutions_Contain{
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 150px;
+}
+/* .Solutions_card{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -490,7 +531,9 @@ span{
     filter: drop-shadow(0px 0px 30px rgba(47, 47, 47, 0.22));
     overflow: hidden;
     cursor: pointer;
-}
+} */
+
+
 .Solutions_card:hover{
     background: rgb(197 197 197 / 20%);
 }
@@ -498,16 +541,15 @@ span{
     text-align: left !important;
     font-style: normal;
     font-weight: 100;
-    font-size: 21px;
-    line-height: 24px;
     padding-left: 10px;
     padding-bottom: 140px;
 }
 .Solutions_card h2{
-    font-size: 42.47px;
     margin-block-end: 0;
     margin-block-start: 0;
-    padding-left: 10px;
+}
+.Solutions_title{
+    text-align:center;
 }
 .Solutions_title span{
     color: white !important;
@@ -525,15 +567,11 @@ span{
 }
 @media all and (max-width: 824px){
     .Solutions_title h1{
-        font-size: 55px;
     }
     .Solutions_title h3 {
-        font-size: 16px;
         top: -36px;
-        line-height: 27.24px;
     }
     .Solutions_title span {
-        font-size: 16px;
     }
     .Solutions{
         margin-top: 0px;
@@ -546,7 +584,7 @@ span{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 1865px;
+    width: 200%;
     margin-top: -150px;
     padding-bottom: 150px;
     height: auto;
@@ -579,26 +617,9 @@ span{
     align-items: center;
     justify-content: flex-start;
     margin-top: 250px;
-}
-
-.Create_title h1{
     text-align: center;
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 81px;
-    line-height: 90px;
-    text-align: center;
-    color: #575E89;
 }
-.Create_title h3{
-    color: #575E89 !important;
 
-}
-.Create_title span{
-    color: #575E89 !important;
-
-}
 .line{
     margin-top: 100px;
 }
@@ -641,8 +662,7 @@ span{
         top: 300px;
     }
     .Create_title h1{
-        font-size: 80px;
-        line-height: 100px;
+
     }
 }
 @media all and (max-width: 836px){
@@ -656,12 +676,10 @@ span{
     .Roadmap{
         flex-direction: column;
         margin-top: -2656px;
-        width: 16%;
     }
 
     .Create_title h1{
-        font-size: 42px;
-        line-height: 61px;
+
     }
 }
 /*CARD RESPONSIVE*/
@@ -672,7 +690,6 @@ span{
     align-items: flex-start;
     justify-content: flex-start;
     padding: 25px  30px;
-    gap: 30px;
     max-width: 500px;
     width: auto;
     height: fit-content;
@@ -687,22 +704,17 @@ span{
     background: rgb(197 197 197 / 20%);
 }
 .CardRes_title{
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
     font-weight: 800;
-    font-size: 41.47px;
-    line-height: 52px;
     margin-block-start: 0px;
     color: #FAFBFB;
     margin-block-end: 0 !important;
+    margin-bottom: 24px !important;
 }
 
 .CardRes h3{
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
     font-weight: 100;
-    font-size: 19.1506px;
-    line-height: 24px;
 }
 
 @media all and (max-width: 1348px){
@@ -746,8 +758,6 @@ span{
     font-family: 'Plus Jakarta Sans';
     font-style: normal;
     font-weight: 800;
-    font-size: 81px;
-    line-height: 102px;
     color: #575E89;
     margin-block-end: 0;
 }
@@ -793,13 +803,10 @@ span{
 @media all and (max-width: 836px){
 
     .Partners h1{
-        font-size: 60px;
     }
     .Partners h3{
-        font-size: 17px;
     }
     .Partners span{
-        font-size: 17px;
     }
     .logos img {
         width: 52px;
@@ -821,25 +828,14 @@ span{
     display: flex;
     padding-left: 3px;
 }
-.Speak_title :hover{
-    color:rgb(255, 131, 15);
-}
 .Speak_title h1{
-    font-family: 'Plus Jakarta Sans';
-    font-style: normal;
-    font-weight: 800;
-    font-size: 81px;
-    line-height: 102px;
-    text-align: center;
-    color: #575E89;
-    margin-block-end: 4px;
+    color: #575e89 !important;
 }
-.Speak_title h3{
+.Speak_title h1:hover{
+    color:rgb(255, 131, 15) !important;
+}
+.Speak_p{
     text-align: center;
-    letter-spacing: 0.02em;
-    color: #575E89;
-    font-weight: 100;
-    font-size: 20px;
 }
      
 .Speak_background{
@@ -886,7 +882,6 @@ span{
 @media all and (max-width: 824px){
 
     .Speak_title h1{
-        font-size: 50px;
     }
 }
 @media all and (max-width: 686px){
@@ -925,26 +920,28 @@ span{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 1em;
 }
 
 .Footer_link2{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 1em;
 }
 
 .footerBold{
     font-weight: 800;
-    font-size: 16px;
 }
 
 .Footer_social{
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    justify-content: flex-end;
     width: 100%;
     gap: 30px;
     padding-top: 10px;
+    padding-right: 10px;
 }
 .copy{
     display: flex;
@@ -954,9 +951,7 @@ span{
     gap: 10px;
 }
 
-.copy span{
-    font-size: 18px;
-}
+
 .open{
     width: 20px;
     filter: invert(1);
@@ -966,7 +961,6 @@ span{
     color: #0419a2;
 }
 .close {
-    font-size: 36px;
     font-weight: 900;
     fill: #575E89;
 }
@@ -996,7 +990,6 @@ span{
 
 .copy h3{
     color: #575E89;
-    font-size: 18px;
 }
 @media all and (max-width: 1275px){
     .links{
@@ -1011,7 +1004,11 @@ span{
     }
 }
 @media all and (max-width: 1014px){
-
+    .Footer_links{
+        flex-direction: column !important;
+        margin-left: 50px;
+        gap: 15px;
+    }
 }
 @media all and (max-width: 836px){
     .Footer{
@@ -1022,12 +1019,6 @@ span{
         align-items: flex-start;
         gap: 30px;
     }
-    .Footer_links h3{
-        font-size: 14px;
-    }
-    .Footer_links span{
-        font-size: 14px;
-    }
     .iconLoading{
         width: 15%;
         margin: auto;
@@ -1035,7 +1026,9 @@ span{
         margin-top: 11px;
     }
 }
-
+.Footer_social a{
+    font-size: 1.5em;
+}
 /*Scroll*/
 body::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */

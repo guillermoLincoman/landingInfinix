@@ -6,14 +6,16 @@ class Speak extends React.Component{
     render(){
         return(
             <div className="Speak" id="Speak">
-                <div className="Speak_title">
-                <a href="mailto:infinixSocial@infinixsm.shop">
-                    <span className="click">Click here and</span>
-                    <Zoom right >
-                        <h1>LET'S TALK !</h1>
-                    </Zoom>
-                    <span >We want to know how far can we go! 😃<br/> maybe to the infinix... </span>
-                </a>
+                <div className="Speak_title dark_text">
+                    <a href="mailto:hi@infinixsocial.com">
+                        <p>
+                            <span className="click">Click here and</span>
+                        </p>
+                        <Zoom right >
+                            <h1>LET'S TALK !</h1>
+                        </Zoom>
+                    </a>
+                    <p className="subtitle Speak_p">We want to know how far can we go! 😃<br/> maybe to the infinix... </p>
                 </div>
                 <div className="Speak_background">
                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 220">

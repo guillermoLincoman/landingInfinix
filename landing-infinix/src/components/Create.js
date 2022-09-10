@@ -11,9 +11,9 @@ class Create extends React.Component{
     render(){
         return(
             <div className="Create">
-                <div className="Create_title">
-                    <h1>HOW WE CREATE<br/> MASTERPIECES</h1>
-                    <h3 className="textLight"> <span className="textBold"> Step by step</span>, from scratch to<span className="textBold"> Inifinix</span></h3>
+                <div className="Create_title ">
+                    <h1 className="dark_text">HOW WE CREATE<br/> MASTERPIECES</h1>
+                    <p className="subtitle dark_text">  Step by step, from scratch to<span className="bold"> Infinix</span></p>
                     <img className="line" src={Line}></img>
                     <img className="line1" src={Line1}></img>
                     <img className="line2" src={Line2}></img>

@@ -15,12 +15,11 @@ import BtnInicio from "../Assets/images/btnInicio.svg";
 class Main extends React.Component{
     render(){
         return(
-            
             <div className="Main">
                 <Fade right cascade>
                 <div className="Service">
                     <div className="containService"> 
-                        <h2>DESIGN AND SOCIAL COM<img className="star" src={Star}></img>DIGITAL MARKETING<img className="star" src={Star}></img>SOCIAL MEDIA<img className="star" src={Star}></img>WEB DEVELOPMENT</h2>
+                        <p className="pService dark_text">DESIGN AND SOCIAL COM<img className="star" src={Star}></img>DIGITAL MARKETING<img className="star" src={Star}></img>SOCIAL MEDIA<img className="star" src={Star}></img>WEB DEVELOPMENT</p>
                     </div>
                 </div>
                 </Fade>
@@ -38,9 +37,11 @@ class Main extends React.Component{
                 <Fade right cascade>
                 <div className="Titulo">
                     <h1>SOCIAL+<br/>MKTNG+<br/>CODE </h1>
-                    <h3>Want new results?<span> keep scrolling</span><br/>we got a solution for you</h3>
-                    <a href="#Solutions"><img className= "images" src={BtnInicio}></img></a>
-                </div>
+                    <div className="Subtitutlo">
+                        <p className="subtitle">Want new results?<span className="bold"><br/>keep scrolling<br/></span>we got a solution for you</p>
+                        <a href="#Solutions"><img className= "images" src={BtnInicio}></img></a>
+                    </div>
+                 </div>
                 </Fade >
             </div>            
         )

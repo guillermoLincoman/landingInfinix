@@ -1,14 +1,16 @@
 import React from "react";
 import "../Assets/css/style.css"; 
-
+import BackdropFilter from "react-backdrop-filter";
 class Card extends React.Component{
     render(){
         return(
+
             <div className="Solutions_card">
-                <h2>{this.props.title}</h2>
-                <h3> {this.props.text}</h3>
-                <img className="mobile" src={this.props.imagen}></img>
-            </div>       
+                <div className="Solutions_Contain" style={{ backgroundImage:`url(${this.props.imagen})` }}>
+                    <h2>{this.props.title}</h2>
+                    <p> {this.props.text}</p>
+                </div>
+            </div>      
         )
     }
 }

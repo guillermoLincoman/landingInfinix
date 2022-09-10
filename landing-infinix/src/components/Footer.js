@@ -1,6 +1,9 @@
 import React from "react";
 import "../Assets/css/style.css"; 
 import footer from "../Assets/images/footer.svg";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTwitter, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+
 
 class Footer extends React.Component{
     render(){
@@ -20,13 +23,13 @@ class Footer extends React.Component{
                         </div>
                     </div>
                     <div className="Footer_social">
-                        <a href="https://twitter.com/Infinixsoft/" target="_blank"><i class=" zmdi zmdi-twitter zmdi-hc-lg"></i></a>
-                        <a href="https://www.instagram.com/infinixsoft_ok/" target="_blank"><i class=" zmdi zmdi-instagram zmdi-hc-lg"></i></a>
-                        <a href="https://www.linkedin.com/company/infinixsoft/" target="_blank"><i class=" zmdi zmdi-linkedin zmdi-hc-lg"></i></a>
+                        <a href="https://twitter.com/Infinixsoft/" target="_blank"><FontAwesomeIcon icon={faTwitter}/></a>
+                        <a href="https://www.instagram.com/infinixsoft_ok/" target="_blank"><FontAwesomeIcon icon={faInstagram}/></a>  
+                        <a href="https://www.linkedin.com/company/infinixsoft/" target="_blank"><FontAwesomeIcon icon={faLinkedin}/></a>
                     </div>
                 </div>
                 <div className="copy">
-                    <h3 className="textLight"> Copyright 2022 <span className="textBold">InfinixSocial</span></h3>
+                    <p className="dark_text"><span className="dark_text">Copyright 2022 </span> InfinixSocial</p>
                     <img src={footer}></img>
                 </div>
             </div>   

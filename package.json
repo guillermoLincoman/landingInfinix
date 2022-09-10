@@ -1,11 +1,13 @@
 {
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.0",
+    "@fortawesome/free-brands-svg-icons": "^6.2.0",
     "@fortawesome/free-regular-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "animate.css": "^4.1.1",
     "jquery": "^3.6.1",
+    "react-backdrop-filter": "^2.1.0",
     "react-reveal": "^1.2.2",
     "react-spinners": "^0.13.4"
   }
