@@ -1,8 +1,5 @@
 import React from "react";
 import "../Assets/css/style.css"; 
-import Zoom from 'react-reveal/Zoom';
-import Pulse from 'react-reveal/Pulse';
-import logoInfinix from "../Assets/images/infinix-logo-full-orange-black.svg"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faArrowRight} from '@fortawesome/free-solid-svg-icons';
 
@@ -12,7 +9,6 @@ class Speak extends React.Component{
     constructor(props) {
         super(props);
         this.state = {value: ''};
-    
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
       }
@@ -41,30 +37,17 @@ class Speak extends React.Component{
                                 <p><FontAwesomeIcon className="FaIcon" icon={faArrowRight}></FontAwesomeIcon> +1 (877) 789 8761</p>
                             </div>
                         </div>
-                        <div className="form">
+                        <div id="Contact" className="form">
                             <form onSubmit={this.handleSubmit}>
-                                <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="Name" />
-                                <input type="email" name="" id="" placeholder="Email"/>
-                                <input type="text" placeholder="Company"/>
+                                <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="Name" required/>
+                                <input type="email" name="" id="" placeholder="Email" required/>
+                                <input type="text" placeholder="Company" required/>
                                 <textarea name="Message" placeholder="Message" id="" cols="30" rows="4"></textarea>
                                 <button type="submit">SEND <span>🚀</span></button>
                             </form>
                         </div>
                     </div>
             </div>
-            // <div className="Speak" id="Speak">
-            //             <Pulse right >
-            //     <div className="Speak_title dark_text">
-            //         <a href="mailto:info@infinixsocial.com">
-            //             <p>
-            //                 <span className="click dark_text">Click here and</span>
-            //             </p>
-            //                 <h2 className="dark_text">LET'S TALK !</h2>
-            //         </a>
-            //         <p className="subtitle Speak_p">We want to know how far can we go! 😃<br/> maybe to the infinix... </p>
-            //     </div>
-            //             </Pulse>
-            // </div>    
         )
     }
 }

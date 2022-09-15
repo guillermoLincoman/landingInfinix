@@ -17,27 +17,34 @@ const override = {
   borderColor: "#ed1651",
   top: "30px",
 };
-
+var appHeader = document.getElementsByClassName("appHeader2");
+var load = document.getElementsByClassName("load2");
 function App() {
-  let [loading, setLoading] = useState(true);
-  useEffect(()=>{
-    setLoading(true);
-    setTimeout(()=>{
-      setLoading(false);
-    },10000)
-  },[])
+  /* 0. Inicializo los contenedores con clases 
+     1. Obtener los contenedores que quiero modificar
+     2. Uso setTimeOut 5s, elimino lo inicializado y agrego clases nuevas
+        load.classList.remove('load2');
+        load.classList.add('load');
+        appHeader.classList.remove('appHeader2');
+        appHeader.classList.add('appHeader');
+  */
+    useEffect(()=>{
+      setTimeout(()=>{
+        load[0].classList.add('load');
+        load[0].classList.remove('load2');
+        appHeader[0].classList.add('appHeader');
+        appHeader[0].classList.remove('appHeader2');
+      },8000)
+    },[])
   return (
     <div className="App">
-      {loading ?(
-        <div className='load'>
+        <div className='load2'>
           <div>
             <img className="iconLoading" src={Icon}/>
-            <BarLoader  loading={loading} cssOverride={override}  size={150} />
-
+            <BarLoader  loading={true} cssOverride={override}  size={150} />
           </div>
         </div>
-        ) : (
-        <header className="App-header">
+        <header className="appHeader2">
           <Background/>
           <NavBar/>
           <Main/>
@@ -46,7 +53,6 @@ function App() {
           <Speak/>
           <Footer/>
         </header>
-        )}
     </div>
   );
 }

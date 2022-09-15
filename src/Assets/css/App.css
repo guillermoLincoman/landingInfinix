@@ -24,7 +24,21 @@ $primary-fontl
 h1{
   color: black;
 }
-.App-header {
+/*Agrego esta clases cuando pasan los 5s*/
+.load{
+  display: none;
+}
+/*Saco esta clases cuando pasan los 5s*/
+.load2{
+  width: 100vw;
+  height: 100vh ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*Agrego esta clases cuando pasan los 5s*/
+.appHeader {
   max-width: 1200px;
   min-width: 300px;
   width: 100%;
@@ -35,8 +49,14 @@ h1{
   align-items: center;
   color: white;
   gap:40px;
+  transition: all 5s ease-in-out !important;
+  margin-top: 0vh;
 }
-
+/*Saco esta clases cuando pasan los 5s*/
+.appHeader2{
+  display: none;
+  margin-top: 100vh;
+}
 .App-link {
   color: #61dafb;
 }
@@ -54,3 +74,4 @@ h1{
   display: flex;
   justify-content: center;
 }
+
